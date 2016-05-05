@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<air:shedule xmlns:air="http://www.dr.org/Shedule"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+             xsi:schemaLocation="http://www.dr.org/Shedule shedule.xsd">
+    <originDestination departureDateTime="2016-03-08T06:10:00.000Z" arrivalDateTime="2016-03-08T07:16:00.000Z">	
+        <departureAirport>Minsk</departureAirport>		
+        <arrivalAirport>Germany</arrivalAirport>
+        <flights>
+            <flight number="r1">	
+                <cost>
+                    <firstClass>100</firstClass>
+                    <businessClass>50</businessClass>
+                    <economyClass>20</economyClass>			 		
+                </cost>
+                <aircraft model="craft1" number="b1" numberSeats="100"/>
+            </flight>
+            <flight number="r2">	
+                <cost>
+                    <firstClass>220</firstClass>
+                    <businessClass>150</businessClass>
+                    <economyClass>50</economyClass>			 		
+                </cost>
+                <aircraft model="craft2" number="b2" numberSeats="200"/>
+            </flight>
+            <flight number="r3">	
+                <cost>
+                    <firstClass>300</firstClass>
+                    <businessClass>250</businessClass>
+                    <economyClass>170</economyClass>			 		
+                </cost>
+                <aircraft model="craft3" number="b3" numberSeats="300"/>
+            </flight>
+        </flights>			
+    </originDestination>
+    <originDestination departureDateTime="2016-03-09T06:10:00.000Z" arrivalDateTime="2016-03-10T00:16:00.000Z">	
+        <departureAirport>Moscow</departureAirport>		
+        <arrivalAirport>Paris</arrivalAirport>
+        <flights>
+            <flight number="r1">	
+                <cost>
+                    <firstClass>100</firstClass>
+                    <businessClass>50</businessClass>
+                    <economyClass>20</economyClass>			 		
+                </cost>
+                <aircraft model="craft1" number="b1" numberSeats="100"/>
+            </flight>
+            <flight number="r2">	
+                <cost>
+                    <firstClass>220</firstClass>
+                    <businessClass>70</businessClass>
+                    <economyClass>20</economyClass>			 		
+                </cost>
+                <aircraft model="craft2" number="b2" numberSeats="200"/>
+            </flight>
+            <flight number="r3">	
+                <cost>
+                    <firstClass>200</firstClass>
+                    <businessClass>150</businessClass>
+                    <economyClass>100</economyClass>			 		
+                </cost>
+                <aircraft model="craft3" number="b3" numberSeats="300"/>
+            </flight>
+        </flights>			
+    </originDestination>      
+</air:shedule>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.dr.org/Shedule"
+    xmlns:air="http://www.dr.org/Shedule">
+    <element name="shedule">
+        <complexType> 
+            <sequence>           
+                <element name="originDestination" type="air:OriginDestination" minOccurs="1" maxOccurs="unbounded"/>  
+            </sequence>       
+        </complexType>    
+    </element>
+    <complexType name="OriginDestination">  
+        <sequence>
+            <element name="departureAirport" type="string" />
+            <element name="arrivalAirport" type="string" /> 
+            <element name="flights" type="air:Flights" />         
+        </sequence>
+        <attribute name="departureDateTime" type="dateTime" use="required" />
+        <attribute name="arrivalDateTime" type="dateTime" use="required" />
+    </complexType>    
+    <complexType name="Flights"> 
+        <sequence>       
+            <element name="flight" type="air:Flight" minOccurs="1" maxOccurs="unbounded" /> 
+        </sequence>
+    </complexType>  
+    <complexType name="Flight">  
+        <sequence>        
+            <element name="cost" type="air:Cost"/>            
+            <element name="aircraft" type="air:Aircraft"/>
+        </sequence>
+        <attribute name="number" type="string" use="required" />               
+    </complexType> 
+    <complexType name="Cost">  
+        <sequence>
+            <element name="firstClass" type="integer" />
+            <element name="businessClass" type="integer"/>            
+            <element name="economyClass" type="integer"/>
+        </sequence>                 
+    </complexType> 
+    <complexType name="Aircraft">
+        <attribute name="model" type="string" />
+        <attribute name="number" type="string"/>            
+        <attribute name="numberSeats" type="integer"/>                       
+    </complexType>
+</schema>
