@@ -1,9 +1,9 @@
 package task4.sax;
 
-import task4.Beans.OriginDestination;
-import task4.Beans.Flight;
-import task4.Beans.Cost;
-import task4.Beans.Aircraft;
+import task4.beans.OriginDestination;
+import task4.beans.Flight;
+import task4.beans.Cost;
+import task4.beans.Aircraft;
 import java.util.ArrayList;
 import java.util.List;
 import org.xml.sax.helpers.DefaultHandler;

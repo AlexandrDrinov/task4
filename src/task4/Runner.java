@@ -1,7 +1,7 @@
 package task4;
 
 import task4.sax.SheduleHandler;
-import task4.Beans.OriginDestination;
+import task4.beans.OriginDestination;
 import java.io.File;
 import java.io.IOException;
 import java.io.StringWriter;
@@ -25,7 +25,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Text;
 import org.xml.sax.SAXException;
-import task4.Beans.Flight;
+import task4.beans.Flight;
 
 public class Runner {
 
