@@ -1,4 +1,4 @@
-package task4.sax;
+package task4.beans;
 
 import java.util.Calendar;
 import java.util.Date;
