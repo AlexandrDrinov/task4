@@ -1,4 +1,4 @@
-package task4.Beans;
+package task4.sax;
 
 public class Cost {
 
